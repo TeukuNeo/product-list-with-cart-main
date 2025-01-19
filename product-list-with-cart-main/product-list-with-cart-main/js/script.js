@@ -25,7 +25,7 @@ let generateMenu = () => {
             <img src="${img}" alt="waffle" id="img" style="border:${search.item > 0 ? 'solid 2px #d84727' : 'none'};">
             <div class="menu-btn-container"> 
             <a class="add-to-cart" id="add-to-cart-${id}" style="visibility:${search.item > 0 ? 'hidden' : 'visible'};">
-             <img src="images/icon-add-to-cart.svg" style="width: 15px; height:15px; position: relative; top: 2px;">Add to Cart</a>  
+             <img src="./assets/images/icon-add-to-cart.svg" style="width: 15px; height:15px; position: relative; top: 2px;">Add to Cart</a>  
               <div class="menu-btn" id="menu-btn" style="visibility:${search.item === 0 ? 'hidden' : 'visible'};">
                 <a class="decrement-btn" id="decrement-btn-${id}">-</a>
                 <span class="quantity" id="quantity-${id}">
