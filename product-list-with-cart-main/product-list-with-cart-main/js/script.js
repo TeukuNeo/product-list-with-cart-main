@@ -25,7 +25,7 @@ let generateMenu = () => {
             <img src="${img}" alt="waffle" id="img" style="border:${search.item > 0 ? 'solid 2px #d84727' : 'none'};">
             <div class="menu-btn-container"> 
             <a class="add-to-cart" id="add-to-cart-${id}" style="visibility:${search.item > 0 ? 'hidden' : 'visible'};">
-             <img src="../assets/images/icon-add-to-cart.svg" style="width: 15px; height:15px; position: relative; top: 2px;">Add to Cart</a>  
+             <img src="assets/images/icon-add-to-cart.svg" style="width: 15px; height:15px; position: relative; top: 2px;">Add to Cart</a>  
               <div class="menu-btn" id="menu-btn" style="visibility:${search.item === 0 ? 'hidden' : 'visible'};">
                 <a class="decrement-btn" id="decrement-btn-${id}">-</a>
                 <span class="quantity" id="quantity-${id}">
@@ -133,7 +133,7 @@ let generateBills = () => {
             <h5 id="item-price">@$${price}</h5>
             <h5 id="item-total-price">$${item * search.price}</h5>
             <div class="del-items">
-            <img src="../assets/images/icon-remove-item.svg" id="del-items-${id}">
+            <img src="assets/images/icon-remove-item.svg" id="del-items-${id}">
             </div>
           </div>
           <hr style="border: 1px solid #f5f3f4;">
@@ -153,7 +153,7 @@ let generateBills = () => {
 
   } else {
     cartDesc.innerHTML = `
-       <img src="../assets/images/illustration-empty-cart.svg" alt="">
+       <img src="assets/images/illustration-empty-cart.svg" alt="">
        <h5 style="color: #583101; font-weight: lighter;">Your added items will appear here!</h5>
       `
   }
@@ -181,7 +181,7 @@ let totalAmount = (id) => {
        <h3>$ ${amount}</h3>
       </div>
       <div class="order-btn">
-        <button id="btn1"><img src="../assets/images/icon-carbon-neutral.svg"> This is <span>carbon-neutral</span> delivery</button>
+        <button id="btn1"><img src="assets/images/icon-carbon-neutral.svg"> This is <span>carbon-neutral</span> delivery</button>
         <button class="btn2" id="btn2-${id}">Confirm Order</button>
       </div>  
     `
